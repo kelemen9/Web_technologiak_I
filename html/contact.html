@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brunch o' clock</title>
+
+        <!--font awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        <!-- custom css file link-->
+        <link rel="stylesheet" href="css/brunchstyle.css">
+    </head>
+    <body>
+
+        <!-- header section -->
+        <header class="header">
+
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">főoldal</a>
+                <a href="#about">rólunk</a>
+                <a href="#menu">kínálatunk</a>
+                <a href="#products">termékek</a>
+                <a href="#review">visszajelzések</a>
+                <a href="#contact">kapcsolat</a>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            <div class="search-form"></div>
+                <input type="search" id="search-box" placeholder="keresés itt...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <span class="fas fa-items"></span>
+                    <img src="images/cart-item-1.png" alt="">
+                    <div class="content">
+                        <h3>espresso-125g</h3>    
+                        <div class="price">1890Ft</div>    
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span class="fas fa-items"></span>
+                    <img src="images/cart-item-2.png" alt="">
+                    <div class="content">
+                        <h3>cappucino-125g</h3>    
+                        <div class="price">2180Ft</div>    
+                    </div>
+            </div>
+
+            <div class="cart-item">
+                <span class="fas fa-items"></span>
+                <img src="images/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>koffeinmentes-125g</h3>    
+                    <div class="price">1790Ft</div>    
+                </div>
+        </div>    
+
+        <div class="cart-item">
+            <span class="fas fa-items"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>mogyoró-kávé-125g</h3>    
+                <div class="price">2290Ft</div>    
+            </div>
+    </div>    
+
+    <div class="cart-item">
+        <span class="fas fa-items"></span>
+        <img src="images/cart-item-5.png" alt="">
+        <div class="content">
+            <h3>brandy-kávé-125g</h3>    
+            <div class="price">2490Ft</div>    
+        </div>
+    </div>    
+
+    <div class="cart-item">
+        <span class="fas fa-items"></span>
+        <img src="images/cart-item-6.png" alt="">
+        <div class="content">
+            <h3>dohány-kávé-125g</h3>    
+            <div class="price">2590Ft</div>    
+        </div>
+</div>    
+            
+        <a href="ˇ#" class="btn">kilépés</a>
+    </div>
+
+</header>
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>Lépj kapcsolatba </span> Velünk</h1>
+
+        <div class="row">
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.4091095166486!2d20.767728599999998!3d48.0830474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47409f85308084bd%3A0x5371e3307b05610d!2sInformatikai%20int%C3%A9zet!5e0!3m2!1shu!2shu!4v1706740024430!5m2!1shu!2shu" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>Adatok</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="név">
+                </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="e-mail cím">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="telefonszám">
+            </div>
+            <input type="submit" value="Küldés" class="btn">
+            </form>
+
+            <script>
+                document.getElementById('myForm').addEventListener('submit', function (event) {
+                    var emailInput = document.getElementById('email');
+                    var emailValue = emailInput.value;
+        
+                    if (!emailValue.includes('@')) {
+                        alert('Az e-mail címnek tartalmaznia kell a "@" jelet!');
+                        event.preventDefault(); // Az űrlap küldésének megakadályozása
+                    }
+                });
+
+            </script>
+            <div class="inputBox">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Feliratkozom a hírlevélre</label>
+            </div>
+        </div>
+    </section>
+
+
